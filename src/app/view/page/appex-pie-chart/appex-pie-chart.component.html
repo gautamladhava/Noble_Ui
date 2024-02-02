@@ -1,0 +1,72 @@
+<div class="chart-wrap">
+    <div class="outer-wrap bar-chart">
+        <div class="count-heading">
+            <h4>MONTHLY SALES</h4>
+            <div class="menu-icon">
+                <button at-icon-button  aria-label="Example icon-button with a menu"
+                    class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-more-horizontal icon-lg text-muted pb-3px" _ngcontent-wcq-c96=""
+                        appfeathericon="">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="chart-title">
+            <p>Sales are activities related to selling or the number of goods or services sold in a given time
+                period.</p>
+        </div>
+        <div class="bar-chart-container">
+         
+            <div id="chart">
+                <apx-chart
+                  [series]="chartOptions.series"
+                  [chart]="chartOptions.chart"
+                  [legend]="chartOptions.legend"
+                  [dataLabels]="chartOptions.dataLabels"
+                  [colors]="chartOptions.colors"
+                  [plotOptions]="chartOptions.plotOptions"
+                ></apx-chart>
+              </div>
+              
+
+        </div>
+    </div>
+    <div class="outer-wrap">
+        <div class="count-heading">
+            <h4>CLOUD STORAGE</h4>
+            <div class="menu-icon">
+                <button at-icon-button  aria-label="Example icon-button with a menu"
+                    class="btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-more-horizontal icon-lg text-muted pb-3px" _ngcontent-wcq-c96=""
+                        appfeathericon="">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="19" cy="12" r="1"></circle>
+                        <circle cx="5" cy="12" r="1"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="chart-containers">
+            <div id="chart1">
+                <apx-chart
+                  [series]="chartOptions1.series"
+                  [chart]="chartOptions1.chart"
+                  [plotOptions]="chartOptions1.plotOptions"
+                  [labels]="chartOptions1.labels"
+                ></apx-chart>
+              </div>
+              
+            
+          
+        </div>
+      
+        <button mat-flat-button color="primary" class="btn full-btn">Upgrade storage </button>
+    </div>
+</div>

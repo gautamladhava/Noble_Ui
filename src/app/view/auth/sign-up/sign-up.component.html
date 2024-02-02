@@ -1,0 +1,37 @@
+<div class="auth-page">
+    <div class="auth-content">
+        <div class="img-wrap"></div>
+        <div class="content-wrap">
+            <a routerLink="#"  title="Noble UI" class="logo">
+                Noble<span>UI</span>
+            </a>
+            <p>Create a free account.</p>
+            <form>
+                <div class="custom-form-field">
+                    <label for="uname">Username</label>
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Username" id="uname" [formControl]="unames">
+                      </mat-form-field>
+                </div>
+                <div class="custom-form-field">
+                    <label for="uname">Email address</label>
+                    <mat-form-field appearance="outline" >
+                        <input matInput placeholder="Email " id="email" [formControl]="email">
+                      </mat-form-field>
+                </div>
+                <div class="custom-form-field">
+                    <label for="uname">Password</label>
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Password" id="uname" [formControl]="password">        
+                      </mat-form-field >
+                </div>
+                <mat-checkbox class="example-margin"  color=primary>Remember me</mat-checkbox>
+                <div class="btn-wrap">
+                    <a routerLink="#"   mat-flat-button color="primary" class="btn" >Sign up</a>
+                    <a routerLink="#"  mat-stroked-button color="primary" class="btn" >Sign up with twitter </a>
+                </div>
+            </form>
+            <p>Already a user?  <a routerLink="/"  title="Sign in"> Sign in</a>   </p>
+        </div>
+    </div>
+</div>

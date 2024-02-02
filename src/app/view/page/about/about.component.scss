@@ -1,0 +1,117 @@
+@import "../../../../assets/css/main.scss";
+
+.about-section {
+    .mail-wrap {
+        .content-wrap {
+            margin: 0;
+
+            .email-list {
+                width: 100%;
+            }
+        }
+    }
+
+    .content-wrap {
+        margin: 0 -12px;
+        display: flex;
+
+
+        .custom-col {
+            padding: 0 12px;
+
+            .custom-content {
+                background-color: $white;
+                padding: 25px;
+                box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &.about-block {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+
+            &.photo-block {
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                .count-heading {
+                    padding-bottom: 10px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid $gray1;
+                }
+
+                .profile-info {
+                    display: flex;
+
+                    img {
+                        height: 35px;
+                        width: 35px;
+                        border-radius: 50%;
+                        margin-right: 15px;
+                    }
+
+                    .profile-content {
+                        font-size: 14px;
+                        color: $black;
+
+                        p {
+                            margin-bottom: 0;
+                        }
+
+                        span {
+                            font-size: 11px;
+                            color: $light_blue;
+                        }
+                    }
+                }
+
+            }
+
+            &.friends-block {
+                flex: 0 0 25%;
+                max-width: 25%;
+
+                .email-list li a p {
+                    .name {
+                        margin-bottom: 0;
+                        font-size: 14px;
+                    }
+
+                    span {
+                        font-size: 11px;
+                    }
+                }
+
+                .count-heading {
+                    margin-bottom: 15px;
+                }
+
+                .img-list {
+                    display: flex;
+                    list-style: none;
+                    flex-wrap: wrap;
+
+                    li {
+                        flex: 0 0 33.33%;
+                        max-width: 33.33%;
+
+                        img {
+                            border-radius: 3px;
+                        }
+                    }
+                }
+
+                .time {
+                    img {
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+<div class="wrapper">
+
+    <app-header></app-header>
+    <div class="main-wrapper">
+        <div class="side_bar">
+            <app-sidebar></app-sidebar>
+        </div>
+        <div class="page">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+    <div class="buy-btn-wrap btn-wrap">
+
+        <button class="btn svg-icon" mat-flat-button color="primary"><i><img src="../../../assets/imges/docs.svg">
+            </i></button>
+        <button class="btn" mat-flat-button color="accent"><img src="../../../assets/imges/cart.svg"> Buy Now</button>
+    </div>
+    <div class="setting-wrap">
+        <div class="setting-icon" (click)="open_setting()">
+            <img src="../../../assets/imges/setting.svg">
+        </div>
+        <div class="setting-content">
+            <h5>Slidebar:</h5>
+            <div class="radio-wrap">
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button color="primary" value="1" [checked]="true">Light</mat-radio-button>
+                    <mat-radio-button color="primary" value="2">Dark</mat-radio-button>
+                </mat-radio-group>
+            </div>
+
+            <h5>Light Theme:</h5>
+            <a routerLink="#">
+                <img src="../../../assets/imges/light.jpg">
+            </a>
+            <h5>Dark Theme:</h5>
+            <a routerLink="#">
+                <img src="../../../assets/imges/dark.jpg">
+            </a>
+
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>

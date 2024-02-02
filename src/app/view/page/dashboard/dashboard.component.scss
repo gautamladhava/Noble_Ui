@@ -1,0 +1,208 @@
+@import "../../../../assets/css/main.scss";
+
+.page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn-wrap {
+        .btn {
+            width: auto !important;
+            min-width: auto !important;
+            padding: 5px 15px !important;
+            height: 38px !important;
+            font-size: 14px !important;
+
+            .mdc-button__label {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center;
+            }
+
+            svg {
+                height: 18px;
+                width: 18px;
+                // margin-right: 0 !important;
+            }
+        }
+    }
+
+    h3 {
+        margin-bottom: 0 !important;
+    }
+
+    margin-bottom: 20px;
+}
+
+::ng-deep .page-heading .btn-wrap .mdc-button__label {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.count-block-wrap {
+    display: flex;
+    margin: 0 -12px;
+
+    .count-block {
+        padding: 12px;
+        margin-bottom: 15px;
+        flex: 0 0 calc(33.33%);
+        max-width: calc(33.33%);
+
+        .content-block {
+            box-shadow: 0 0 10px #b7c0ce33;
+            background-color: $white;
+            padding: 15px 24px;
+
+        }
+    }
+
+
+    .count-content {
+        display: flex;
+        margin: 0 -8px;
+
+        .percentage {
+            &.green-text {
+                color: $success;
+            }
+
+            &.red-text {
+                color: $danger;
+            }
+
+            svg {
+                height: 14px;
+                width: 14px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 8px !important;
+        }
+
+        .left-content {
+            flex: 0 0 40%;
+            max-width: 40%;
+            padding: 0 8px;
+        }
+
+        .right-content {
+            flex: 0 0 60%;
+            max-width: 60%;
+            padding: 0 8px;
+            max-height: 70px;
+
+            canvas {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+
+
+.outer-wrap {
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    background-color: $white;
+    padding: 24px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+
+.chart-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin-right: 15px;
+        font-size: 13px;
+        color: $light_blue;
+    }
+}
+
+.chart-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .outer-wrap {
+        flex: 0 0 35%;
+        max-width: 35%;
+
+        &.bar-chart {
+            flex: 0 0 calc(65% - 25px);
+            margin-right: 25px;
+            max-width: calc(65% - 25px);
+        }
+    }
+}
+
+.chart-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+
+    canvas {
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+
+.bar-chart-container {
+    max-height: 320px;
+    width: 100% !important;
+
+    canvas {
+        width: 100% !important;
+    }
+}
+
+.table-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .outer-wrap {
+        flex: 0 0 calc(70% - 25px);
+        max-width: calc(70% - 25px);
+        margin-bottom: 0 !important;
+
+        &.inbox {
+            flex: 0 0 30%;
+            max-width: 30%;
+            margin-right: 25px;
+        }
+
+        .mat-elevation-z8 {
+            box-shadow: none;
+
+            th {
+                color: $light_blue;
+            }
+
+            .btn {
+                border: 0 !important;
+                width: auto !important;
+                height: auto !important;
+                font-size: 11px !important;
+                min-width: auto !important;
+                padding: 7px !important;
+                box-shadow: 0 !important;
+
+                .mat-mdc-raised-button .mat-mdc-button-touch-target {
+                    height: auto !important;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+#appex-bar-chart {
+
+    max-width: 650px;
+    margin: 35px auto;
+}

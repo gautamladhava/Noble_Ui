@@ -1,0 +1,164 @@
+<header class="header">
+    <div class="header-block">
+        <div class="left-block">
+            <div class="custom-form-field">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Search here...">
+                    <mat-icon matPrefix>search</mat-icon>
+
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="right-block">
+            <ul class="navbar">
+                <li>
+                    <a routerLink="#"  [matMenuTriggerFor]="language" aria-label="Example icon-button with a menu">
+                        <i><img src="../../../assets/imges/flag_1.svg"> </i><span>English</span></a>
+                    <mat-menu #language="matMenu">
+                        <ul class="language-list">
+                            <li>
+                                <a routerLink="#" class=" btn" color="primary" mat-button> <i><img
+                                            src="../../../assets/imges/flag_1.svg">
+                                    </i><span>English</span></a>
+                            </li>
+                            <li>
+                                <a routerLink="#" class=" btn" color="primary" mat-button> <i><img
+                                            src="../../../assets/imges/flag_2.svg">
+                                    </i><span>French</span></a>
+                            </li>
+                            <li>
+                                <a routerLink="#" class=" btn" color="primary" mat-button> <i><img
+                                            src="../../../assets/imges/flag_3.svg">
+                                    </i><span>German</span></a>
+                            </li>
+
+
+                        </ul>
+                    </mat-menu>
+                </li>
+                <li>
+                    <a routerLink=".//"  [matMenuTriggerFor]="apps" aria-label="Example icon-button with a menu"> <i>
+                            <i><img src="../../../assets/imges/apps.svg"> </i> </i></a>
+                    <mat-menu #apps="matMenu" class="app-list">
+                        <mat-card>
+                            <mat-card-header>
+                                <div class="card-header">
+                                    <span>Web Apps </span>
+                                    <a routerLink="#" mat-button class="btn" color="primary">Edit </a>
+                                </div>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <ul class="app-lists">
+                                    <li>
+                                        <a mat-button color="primary"> <i><img src="../../../assets/imges/comment.svg">
+                                            </i>Chat </a>
+                                    </li>
+                                    <li>
+                                        <a mat-button color="primary"> <i><img src="../../../assets/imges/calendar.svg">
+                                            </i>Calender </a>
+                                    </li>
+                                    <li>
+                                        <a mat-button color="primary"> <i><img src="../../../assets/imges/mail.svg">
+                                            </i>Mail </a>
+                                    </li>
+                                    <li>
+                                        <a mat-button color="primary"> <i><img
+                                                    src="../../../assets/imges/instagram.svg">
+                                            </i>instagram </a>
+                                    </li>
+                                </ul>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button mat-button class="btn" color="primary">View All</button>
+
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-menu>
+                </li>
+                <li>
+                    <a routerLink=".//" [matMenuTriggerFor]="notification" aria-label="Example icon-button with a menu">
+                        <i><img src="../../../assets/imges/notification.svg"> </i><span class="notification"></span>
+                    </a>
+                    <mat-menu #notification="matMenu" class="app-list">
+                        <mat-card>
+                            <mat-card-header>
+                                <div class="card-header">
+                                    <span>6 New Notifications </span>
+                                    <a mat-button class="btn" color="primary">Clear all </a>
+                                </div>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <ul class="notification-list">
+                                    <li>
+                                        <a routerLink="#" mat-button color="primary"><i><img
+                                                    src="../../../assets/imges/notification_img.jpg"> </i>
+                                            <p> New Order Ricived <span>30 min ago</span></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a routerLink="#" mat-button color="primary"><i><img
+                                                    src="../../../assets/imges/notification_img.jpg"> </i>
+                                            <p> Server Limit Reached!<span>50 min ago</span></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a routerLink="#" mat-button color="primary"><i><img
+                                                    src="../../../assets/imges/notification_img.jpg"> </i>
+                                            <p> New customer registered <span>1 hrs ago</span></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a routerLink="#"><i><img src="../../../assets/imges/notification_img.jpg"> </i>
+                                            <p> Apps are ready for update<span>1 hrs ago</span></p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a routerLink="#" mat-button color="primary"><i><img
+                                                    src="../../../assets/imges/notification_img.jpg"> </i>
+                                            <p> Download completed <span>2 hrs ago</span></p>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </mat-card-content>
+                            <mat-card-actions>
+                                <button mat-button class="btn" color="primary">View All</button>
+
+                            </mat-card-actions>
+                        </mat-card>
+                    </mat-menu>
+                </li>
+                <li>
+                    <a routerLink=".//" class="notification-img" [matMenuTriggerFor]="profile"
+                        aria-label="Example icon-button with a menu"> <i> <i><img
+                                    src="../../../assets/imges/profile_img.jpg"> </i> </i></a>
+                    <mat-menu #profile="matMenu" class="profile">
+                        <div class="profile-block">
+                            <div class="profile-details">
+                                <i><img src="../../../assets/imges/profile_img.jpg"> </i>
+                                <p class="user-name">Amiah Burton</p>
+                                <a routerLink="#" class="user-id">amiahburton@gmail.com</a>
+                            </div>
+                            <ul class="profile-menu-list">
+                                <li><a routerLink="#" mat-button class="btn" color="primary"><i><img
+                                                src="../../../assets/imges/profile-img.svg"> </i>
+                                        Profile </a> </li>
+                                <li><a routerLink="#" mat-button class="btn" color="primary"><i><img
+                                                src="../../../assets/imges/edit-profile.svg"> </i>Edit
+                                        Profile </a> </li>
+                                <li><a routerLink="#" mat-button class="btn" color="primary"><i><img
+                                                src="../../../assets/imges/switch-user.svg"> </i>
+                                        Switch User </a> </li>
+                                <li><a routerLink="/" mat-button class="btn" color="primary"><i><img
+                                                src="../../../assets/imges/log-out.svg"> </i> Log
+                                        Out </a> </li>
+
+
+                            </ul>
+                        </div>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

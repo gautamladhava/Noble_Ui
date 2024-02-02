@@ -1,0 +1,182 @@
+@import "../../../assets/css/main.scss";
+
+.sidebar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    border-right: 1px solid $gray;
+
+    .sidebar-heading {
+        padding: 19px 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $gray;
+
+        a {
+            margin-bottom: 0;
+        }
+    }
+
+
+    .sidebar-menu {
+        padding: 15px 25px;
+        list-style-type: none;
+        height: calc(100vh - 66px);
+
+        mat-accordion {
+            height: 100%;
+        }
+
+        .menu-heading {
+            color: $light_blue;
+            margin: 12px 0 8px 0;
+            font-size: 11px;
+        }
+
+        svg {
+            height: 15px;
+            width: 15px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+            display: block;
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: $black !important;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                &.active{
+                    color: $light_blue1 !important;
+                }
+            }
+
+            &:hover {
+                >a {
+                    color: $light_blue1 !important;
+                }
+
+                svg {
+                    color: $light_blue1;
+                }
+
+                mat-panel-title {
+                    a {
+                        color: $light_blue1 !important;
+                    }
+
+                    mat-panel-title {
+                        a {
+                            color: $black !important;
+                        }
+                    }
+                }
+
+            }
+
+            .item-list {
+                list-style-type: none;
+                margin-top: 10px;
+
+
+                li {
+                    position: relative;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+
+                    a {
+                        transition: all 0.3s;
+                        font-size: 13px;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        border: 1px solid $gray;
+                        position: absolute;
+                        top: 7px;
+                        left: -20px;
+                        transition: all 0.3s;
+                    }
+
+                    &:hover {
+                        &::after {
+                            background-color: $light_blue1;
+                            border-color: $light_blue1;
+                        }
+                        a {
+                            transform: translateX(2px);
+                            color: $light_blue1 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .mat-expansion-panel-header {
+            padding: 0;
+            height: auto !important;
+            font-weight: normal;
+
+            &:hover {
+                background-color: transparent;
+            }
+
+            &.mat-expanded {
+                a {
+                    color: $light_blue1 !important;
+                }
+            }
+
+        }
+
+        .mat-expansion-panel {
+            box-shadow: none;
+            overflow: visible;
+            margin: 0 !important;
+
+            .mat-expansion-panel {
+                mat-panel-title {
+                    a {
+                        color: $black !important;
+                        &:hover {
+                            color: $light_blue1 !important;
+                        }
+                    }
+                }
+
+                .mat-expanded {
+                    a {
+                        color: $light_blue1 !important;
+                    }
+
+                    li {
+                        &::after {
+                            background-color: $light_blue1;
+                            border-color: $light_blue1;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+
+::ng-deep mat-expansion-panel .mat-expansion-panel-body {
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+}

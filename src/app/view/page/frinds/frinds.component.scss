@@ -1,0 +1,14 @@
+.friend-section {
+    .img-list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            flex: 0 0 16.67%;
+            text-align: center;
+            max-width: 16.67%;
+            text-align: center;
+        }
+    }
+}

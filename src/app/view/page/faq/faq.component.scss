@@ -1,0 +1,47 @@
+@import "../../../../assets/css/main.scss";
+
+.faq-wrap {
+    background-color: $white;
+    padding: 25px;
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+
+    .mat-expansion-panel-spacing {
+        margin: 0 !important;
+    }
+
+    .mat-expansion-panel {
+        box-shadow: none;
+        border: 1px solid $gray;
+
+        &:not(:last-child) {
+            border-bottom: 0;
+        }
+
+        .mat-expansion-panel-header-title {
+            font-weight: normal !important;
+        }
+
+        .mat-expansion-panel-header {
+            &.mat-expanded {
+                background-color: $light_blue2 !important;
+                color: $light_blue1 !important;
+                height: 53px;
+
+                .mat-expansion-panel-header-title {
+                    color: $light_blue1 !important;
+
+                }
+            }
+
+            &:hover {
+                background-color: transparent;
+            }
+        }
+    }
+
+
+}
+
+::ng-deep .faq-wrap .mat-expansion-panel-body {
+    padding: 15px 24px !important;
+}

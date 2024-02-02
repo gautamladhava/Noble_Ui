@@ -1,0 +1,25 @@
+@import "../../../assets/css/main.scss";
+
+.footer{
+
+    margin-left: auto;
+    padding: 15px 25px;
+    border-top: 1px solid $gray1;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color: $light_blue;
+            margin-bottom: 0;
+            font-size: 13px;
+        }
+        .left-part{
+        
+            a{
+                color: $light_blue1 !important;
+                text-decoration: none;
+            }
+        }
+    }
+}

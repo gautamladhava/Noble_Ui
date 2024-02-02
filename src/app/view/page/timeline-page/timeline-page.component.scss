@@ -1,0 +1,52 @@
+@import "../../../../assets/css/main.scss";
+
+
+.timeline-wrap {
+    padding: 25px;
+    box-shadow: 0 0 10px 0 rgba(183, 192, 206, .2);
+    background-color: $white;
+
+    h5 {
+        margin-bottom: 20px;
+    }
+
+    .timeline-block {
+        .time_list {
+            list-style: none;
+            max-width: 550px;
+            margin: 0 auto;
+            padding: 3%;
+            background-color: rgba(101, 113, 255, .2);
+            border-left: 3px solid $light_blue1;
+
+            li {
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid $gray;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    top: 5px;
+                    width: 15px;
+                    height: 15px;
+                    left: -55px;
+                    background-color: $white;
+                    border: 3px solid $light_blue1;
+                    content: "";
+                    border-radius: 50%;
+                }
+
+                &::before {
+                    position: absolute;
+                    left: -150px;
+                    top: 5px;
+                    content: attr(data-date);
+                    font-weight: 500;
+                    font-size: 12px;
+
+                }
+            }
+        }
+    }
+}
